@@ -2202,6 +2202,25 @@ public class SuperTextView extends RelativeLayout implements HasTypeface {
         return this;
     }
 
+
+    /**
+     * 设置分割线颜色
+     *
+     * @param color color
+     * @return superTextView
+     */
+    public SuperTextView setDividerLineColor(int color) {
+        mDividerLineColor = color;
+        if (mTopDividerLineView != null) {
+            mTopDividerLineView.setBackgroundColor(mDividerLineColor);
+        }
+        if (mBottomDividerLineView != null) {
+            mBottomDividerLineView.setBackgroundColor(mDividerLineColor);
+        }
+
+        return this;
+    }
+
     /////////////////////////////////////对外暴露的方法---end/////////////////////////////////
 
 
